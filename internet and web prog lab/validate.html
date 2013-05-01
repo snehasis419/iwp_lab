@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>validation</title>
+
+</head>
+<body>
+<script type="text/javascript">
+function check()
+{
+var cgh = document.getElementsByName('sex');
+var ischecked_method = false;
+var v="";
+for ( var i = 0; i < cgh.length; i++) 
+{
+    if(cgh[i].checked)
+	{
+        v=cgh[i].value;
+    }
+}
+
+
+var cgh1 = document.getElementsByName('lang');
+var ischecked_method1 = false;
+var v1="";
+for ( var i1 = 0; i1 < cgh.length; i1++) 
+{
+    if(cgh1[i1].checked)
+	{
+        v1=cgh1[i1].value;
+    }
+}
+
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  var name_pat=/^[a-zA-Z ]*$/;
+  
+  if(document.getElementById("user").value=="")
+  {
+    window.alert("enter a user id");
+  }
+  else if(document.getElementById("user").value.length<5 || document.getElementById("user").value.length>12)
+  {
+    window.alert("userid between 5 and 12 characters");
+  }
+  else if(document.getElementById("pwd").value=="")
+  {
+    window.alert("enter a password");
+  }
+  else if(document.getElementById("pwd").value.length<7 || document.getElementById("pwd").value.length>12)
+  {
+    window.alert("password between 7 and 12 characters");
+  }
+  else if(document.getElementById("name").value=="")
+  {
+    window.alert("please enter a name");
+  }
+  else if( !name_pat.test(document.getElementById("name").value))
+   {alert("Enter alphabets only in name");}
+   
+  else if(document.getElementById("coun").value==-1)
+  {
+    window.alert("please select a country");
+  }
+  else if(document.getElementById("zip").value=="")
+  {
+    window.alert("please enter a zipcode");
+  }
+   else if(isNaN(document.getElementById("zip").value)==1)
+  {
+    window.alert("please enter a numeric zipcode");
+  }
+  else if(document.getElementById("email").value=="")
+  {
+    window.alert("please enter an email");
+  }
+  else if( !emailPattern.test(document.getElementById("email").value))
+   {alert("Enter valid email");}
+
+ else if(v=="")   { 
+    alert("Please choose your sex");
+  }
+  else if(v1=="")
+  {
+    alert("please choose your language");
+  }
+ 
+  else
+  {
+    window.open("submit.html");
+  }
+}  
+</script>
+<b>Registration Form</b><br><br>
+<form id="myForm">
+User id:
+<input id="user" type="textbox"><br>
+Password:
+<input id="pwd" type="password"><br>
+Name:
+<input id="name" type="textbox"><br>
+Address:
+<input id="add" type="textbox"><br>
+Country:
+<select id="coun">
+ <option value="-1">(please select a country)</option>
+ <option value="1">India</option>
+ <option value="2">Others</option>
+</select><br>
+ZIP Code:
+<input id="zip" type="textbox"><br>
+Email:
+<input id="email" type="textbox"><br>
+Sex:
+<input id="sex1" type="radio" value="1" name="sex">Male
+<input id="sex2" type="radio" value="2" name="sex">Female
+<br>
+Language:
+<input id="lang" type="checkbox" value="1" name="lang">English
+<input id="lang" type="checkbox" value="2" name="lang">Non English
+<br>
+About:
+<br>
+<textarea rows="10" cols="50"></textarea><br>
+<input type="submit" onclick="check()" value="Submit">
+</form>
+</body>
+</html> 

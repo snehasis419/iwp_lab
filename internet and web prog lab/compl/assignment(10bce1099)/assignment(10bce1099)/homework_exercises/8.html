@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>longest word</title>
+</head>
+<body>
+<script>
+var a=new Array();
+var c=window.prompt("enter the number of elements in an array","");
+var i;
+for(i=0;i<c;i++)
+{
+  a[i]=window.prompt("enter a word");
+}
+findLongestWord(a);
+function findLongestWord(a)
+{
+  var k,max_pos=-1,max=0;
+  for(k=0;k<c;k++)
+  {
+     if(a[k].length>max)
+	 {
+	   max=a[k].length;
+	   max_pos=k;
+	  }
+   }
+alert("the longest word is:-  "+a[max_pos]);
+}
+</script>
+</body>
+</html>   

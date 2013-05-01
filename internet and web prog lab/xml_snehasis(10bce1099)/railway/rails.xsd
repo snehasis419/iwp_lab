@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="cdef">
+<xs:element name="RailwayTicket">
+ <xs:complexType>
+    <xs:sequence>
+	   <xs:element name="source">
+          <xs:complexType>
+               <xs:sequence>
+			      <xs:element name="stationName">
+                     <xs:simpleType>
+                         <xs:restriction base="xs:string">
+                             <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+                         </xs:restriction>
+                     </xs:simpleType>
+                  </xs:element>  
+				  <xs:element name="stationCode">
+                     <xs:simpleType>
+                         <xs:restriction base="xs:positiveInteger">
+                             <xs:pattern value="[0-9][0-9][0-9]"/>
+                         </xs:restriction>
+                     </xs:simpleType>
+                  </xs:element>   
+				  </xs:sequence>
+		  </xs:complexType>
+          </xs:element>		  
+		  <xs:element name="destination">
+          <xs:complexType>
+               <xs:sequence>
+			      <xs:element name="stationName">
+                     <xs:simpleType>
+                         <xs:restriction base="xs:string">
+                             <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+                         </xs:restriction>
+                     </xs:simpleType>
+                  </xs:element>  
+				  <xs:element name="stationCode">
+                     <xs:simpleType>
+                         <xs:restriction base="xs:positiveInteger">
+                             <xs:pattern value="[0-9][0-9][0-9]"/>
+                         </xs:restriction>
+                     </xs:simpleType>
+                  </xs:element>   
+				  </xs:sequence>
+		  </xs:complexType>
+          </xs:element>		  
+		  <xs:element name="pdetails">
+          <xs:complexType>
+               <xs:sequence>
+			      <xs:element name="name">
+                  <xs:complexType>
+                      <xs:sequence>
+					      <xs:element name="title">
+                             <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                       <xs:enumeration value="Mr"/>
+                                       <xs:enumeration value="Mrs"/>
+                                       <xs:enumeration value="Ms"/>
+									   <xs:enumeration value="Dr"/> 
+                                 </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="actualName" type="xs:string"/>	
+                        </xs:sequence>
+		        </xs:complexType>
+                </xs:element>							
+				<xs:element name="age">
+                    <xs:simpleType>
+                       <xs:restriction base="xs:integer">
+                          <xs:minInclusive value="5"/>
+                          <xs:maxInclusive value="100"/>
+                       </xs:restriction>
+                   </xs:simpleType>
+                </xs:element> 
+				<xs:element name="sex">
+                             <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                       <xs:enumeration value="male"/>
+									   <xs:enumeration value="female"/> 
+                                 </xs:restriction>
+                            </xs:simpleType>
+                 </xs:element>
+				 <xs:element name="seniorCitizen">
+                             <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                       <xs:enumeration value="yes"/>
+									   <xs:enumeration value="no"/> 
+                                 </xs:restriction>
+                            </xs:simpleType>
+                 </xs:element>
+				  </xs:sequence>
+		  </xs:complexType>
+          </xs:element>
+          <xs:element name="bookeddate" type="xs:date"/>
+          <xs:element name="amt">
+                             <xs:simpleType>
+                                  <xs:restriction base="xs:number">
+                                       <xs:fractionDigits value="2"/>
+								  </xs:restriction>
+                            </xs:simpleType>
+           </xs:element>
+            </xs:sequence>
+		</xs:complexType>
+     </xs:element>		   
+</xs:schema>	 

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>question1</title>
+</head>
+<body>
+<script>
+var a=new Array();
+a[0]="hello";
+a[1]="how";
+a[2]="you";
+var s=window.prompt("do you want to \n1.insert \n2.delete");
+if(s==1)
+{
+  var t=window.prompt("enter the position in 0 indexing");
+  var y=window.prompt("enter value to insert");
+  if(t==a.length)
+  {
+    a[t]=y;
+  }
+  else
+  {
+     var i;
+     for(i=a.length-1;i>=t;i--)
+	 {
+	    a[i+1]=a[i];
+	  }
+     a[t]=y;
+   }
+for(i=0;i<a.length;i++)
+{
+  document.write(a[i]+"  ");
+ }
+}
+if(s==2)
+{
+  var po=window.prompt("do you want to \n1.delete by value \n2.delete by position"); 
+  if(po==1)
+  {
+  var ty,pos;
+    var f=window.prompt("enter the value you want to delete");
+	for(ty=0;ty<a.length;ty++)
+	{
+      if(a[ty]==f)
+      {
+        pos=ty;
+        break;
+      }
+    }
+    for(ty=pos;ty<a.length;ty++)
+	{
+      a[ty]=a[ty+1];
+    }	
+   }
+   if(po==2)
+   {
+     var fhj=window.prompt("enter the position you want to delete");  
+     for(pol=pos;pol<a.length;pol++)
+	{
+      a[pol]=a[pol+1];
+    }	
+   }
+  for(i=0;i<a.length;i++)
+{
+  document.write(a[i]+"  ");
+ }
+} 
+  
+</script>
+</body>
+</html>

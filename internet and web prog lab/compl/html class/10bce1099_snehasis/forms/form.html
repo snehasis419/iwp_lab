@@ -1,0 +1,40 @@
+<head>
+<title>HTML Forms</title>
+<style>
+h1
+{
+ color:green;
+ }
+</style>
+<script>
+function func()
+{
+ var n=document.getElementById("f").value;
+ var f=document.getElementById("f1").value;
+ if(n=="")
+ {
+    window.alert("enter a username");
+ }
+ else if(f=="")
+ {
+   window.alert("enter a password");
+ }
+ else
+ {
+   window.open("fg.html");
+   window.close();
+ }
+ 
+}
+</script>
+</head>
+<body>
+<h1>Register youself</h1>
+<form name="ko">
+User Name: <input id="f" type="text" name="firstname"><br>
+Password: <input id="f1" type="password" name="pwd"><br>
+<input type="submit" onclick="func()" value="Submit">
+</form> 
+</html>
+</body>
+</html>

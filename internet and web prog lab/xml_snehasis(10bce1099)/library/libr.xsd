@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="abcd">
+<xs:element name="library">
+ <xs:complexType>
+    <xs:sequence>
+	<xs:element name="title">
+      <xs:complexType>
+         <xs:sequence> 	
+	        <xs:element name="type">
+	           <xs:complexType>
+		          <xs:sequence>
+		              <xs:element name="value" type="xs:string"/>
+			          <xs:element name="ref" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+             </xs:element>	
+             <xs:element name="category">
+	           <xs:complexType>
+		          <xs:sequence>
+		              <xs:element name="value" type="xs:string"/>
+			          <xs:element name="bookbank" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+             </xs:element>
+		 </xs:sequence>
+        </xs:complexType>
+     </xs:element> 
+     <xs:element name="author">
+      <xs:complexType>
+         <xs:sequence>
+             <xs:element name="fname" type="xs:string"/>
+			 <xs:element name="lname" type="xs:string"/>
+         </xs:sequence>
+        </xs:complexType>
+     </xs:element> 	
+	 <xs:element name="publisher">
+      <xs:complexType>
+         <xs:sequence>
+             <xs:element name="name" type="xs:string"/>
+			 <xs:element name="contactPerson">
+			 <xs:complexType>
+                <xs:sequence>
+				   <xs:element name="phone">
+                       <xs:complexType>
+                         <xs:sequence> 		
+                             <xs:element name="landline" type="xs:positiveInteger"/>
+                             <xs:element name="mobile" type="xs:positiveInteger"/> 							 
+                         </xs:sequence>
+                       </xs:complexType>
+                   </xs:element>
+                   <xs:element name="email" type="xs:string"/>
+                </xs:sequence>
+              </xs:complexType>
+              </xs:element>			   
+              <xs:element name="address" type="xs:string"/>
+			  <xs:element name="phone">
+                  <xs:complexType>
+                     <xs:sequence>
+                        <xs:element name="office" type="xs:positiveInteger"/>
+                        <xs:element name="fax" type="xs:positiveInteger"/> 
+                     </xs:sequence>
+                  </xs:complexType>
+              </xs:element>							
+              <xs:element name="email" type="xs:string"/> 
+              </xs:sequence>
+            </xs:complexType>
+        </xs:element>	
+		 <xs:element name="accno" type="xs:positiveInteger"/>
+         <xs:element name="dep" type="xs:string"/> 
+		 </xs:sequence>
+     </xs:complexType>
+ </xs:element>
+
+</xs:schema>

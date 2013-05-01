@@ -1,0 +1,12 @@
+length of string
+first occurence
+finding match
+replace
+creation of array
+insertin , deleting an array element
+extracting elements in an array
+return today's date and time
+concatenation of 3 arrays
+reversing the order of array elements
+finding max, min of two numbers
+creation of alert and confirm boxes.

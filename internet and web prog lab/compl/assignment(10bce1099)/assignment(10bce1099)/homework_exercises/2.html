@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>question1</title>
+<script>
+function fg()
+{
+//alert("safdegdfd");
+var t=window.prompt("enter the first number","0");
+var h=window.prompt("enter the second number","0");
+var hlo=window.prompt("enter the third number","0");
+t=parseInt(t);
+h=parseInt(h);
+hlo=parseInt(hlo);
+maxOfThree(t,h,hlo);
+}
+
+function maxOfThree(x,y,z)
+{
+  if(x>=y && x>=z)
+  {
+    window.alert(x+" is greater");
+  }
+  else if(x<=y && z<=y)
+  {
+     window.alert(y+" is greater");
+   }
+   else 
+   {
+   window.alert(z+" is greater");
+   }
+}
+</script>
+</head>
+<body>
+
+<h1>this is to find largest of 3 numbers</h1>
+<button type="button" onClick="fg()">start</button>
+</body>
+</html>   

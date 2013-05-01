@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE root-element SYSTEM "lib.dtd"> 
+<libraryDetails xmlns="" xmlns:xsi="abcd" xsi:schemaLocation="libr.xsd">
+ <library type="A">
+   <title>
+     <type>
+      <value>TextBook</value> 	 
+	  <ref>unknown</ref>
+     </type>
+     <category>
+       <value>normal</value>
+       <bookbank>science</bookbank>
+     </category>
+    </title>
+    <author>
+      <fname>ty</fname>
+      <lname>lee</lname> 
+    </author> 	  
+    <publisher>
+       <name>APC</name>
+       <contactPerson>
+	       <phone> 
+		      <landline>12345678</landline>
+		      <mobile>7894561230</mobile>
+		   </phone>
+	       <email>o@o.in</email>
+	   </contactPerson>
+	   <address>12 lane faghs</address>
+       <phone>
+	      <office>7985461451</office>
+		  <fax>04478951234</fax>
+ 	   </phone>
+       <email>apc@apc.in</email>
+    </publisher>
+    <accno>123456</accno>
+    <dep>cse</dep>	
+  </library>
+  <library type="B">
+   <title>
+     <type>
+      <value>TextBook</value> 	 
+	  <ref>teacher</ref>
+     </type>
+     <category>
+       <value>novel</value>
+       <bookbank>literature</bookbank>
+     </category>
+    </title>
+    <author>
+      <fname>stan</fname>
+      <lname>james</lname> 
+    </author> 	  
+    <publisher>
+       <name>pearson</name>
+       <contactPerson>
+	       <phone> 
+		      <landline>15975312</landline>
+		      <mobile>12327894560</mobile>
+		   </phone>
+	       <email>W@qwerty.in</email>
+	   </contactPerson>
+	   <address>15 lane mare</address> 
+       <phone>
+	      <office>12345678</office>
+		  <fax>044127898</fax>
+ 	   </phone>
+       <email>pearson@pearson.com</email>
+    </publisher>	
+	<accno>123789</accno>
+    <dep>ece</dep>	
+  </library>
+</libraryDetails>  
+       	   
+   

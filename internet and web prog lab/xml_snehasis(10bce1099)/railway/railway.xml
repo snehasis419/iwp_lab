@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!DOCTYPE root-element SYSTEM "rail.dtd"> 
+<Railways xmlns="" xmlns:xsi="cdef" xsi:schemaLocation="rails.xsd">
+   <RailwayTicket type="A">
+      <source>
+	     <stationName>VAN</stationName>
+		 <stationCode>123</stationCode>
+       </source>
+       <destination>
+          <stationName>KOL</stationName>
+          <stationCode>456</stationCode>
+        </destination>
+        <pdetails>
+            <name>
+                <title>Mr</title>
+                <actualName>tom</actualName>
+            </name>
+            <age>25</age>
+            <sex>male</sex>
+            <seniorCitizen>no</seniorCitizen>
+         </pdetails>
+         <bookeddate>12-03-1992</bookeddate>
+         <amt>192.00</amt>
+    </RailwayTicket>
+</Railways>     	

@@ -1,0 +1,45 @@
+<head>
+<title>sum_mul</title>
+</head>
+<body>
+<script>
+var a=new Array();
+var c=window.prompt("enter the number of elements in an array","");
+var i;
+for(i=0;i<c;i++)
+{
+  a[i]=window.prompt("enter a value");
+}
+var op=window.prompt("enter \n1.to add \n2.to multiply");
+if(op==1)
+{
+  sum(a);
+}
+else
+{
+  multiply(a);
+}
+function sum(d)
+{
+   var ti,sum1=0;
+   for(ti=0;ti<d.length;ti++)
+   {
+       d[ti]=parseInt(d[ti]);
+	   sum1+=d[ti];
+    }
+   alert("the total sum is "+sum1);
+}
+function multiply(g)
+{
+   var fg,mul1=1;
+   for(fg=0;fg<g.length;fg++)
+   {
+       g[fg]=parseInt(g[fg]);
+        mul1*=g[fg];
+	}
+  	alert("the total sum is "+mul1);
+
+}
+</script>
+</body>
+</html>

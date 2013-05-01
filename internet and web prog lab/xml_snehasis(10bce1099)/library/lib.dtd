@@ -1,0 +1,23 @@
+<!ELEMENT libraryDetails (library)>
+<!ELEMENT library (title,author,publisher,accno,dept)>
+<!ELEMENT title (type,category)>
+<!ELEMENT type (value,ref)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT category (value,bookbank)>
+<!ELEMENT author (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT publisher(name,contactPerson,address,phone,email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT contactPerson (phone,email)>
+<!ELEMENT phone (mobile,landline)>
+<!ELEMENT phone (office,fax)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT landline (#PCDATA)>
+<!ELEMENT office (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT accno (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>

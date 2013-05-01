@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>calculator</title>
+</head>
+<body>
+<p>This is a calculator</p>
+<p>The functions are:- <br>1.add<br>2.substract<br>3.multiply<br>4.divide</p>
+<script>
+function calc()
+{
+      // button=document.getElementById("add");
+	   //button1=document.getElementById("sub"); 
+       //button2=document.getElementById("mul"); 
+       //button2=document.getElementById("div"); 	
+
+       var buttons = document.getElementsByTagName("button");
+       var buttonsCount = buttons.length;
+       for (var i = 0; i <= buttonsCount; i += 1) 
+	   {
+       buttons[0].onclick = function() {
+       var a=window.prompt("enter first number","0");
+       var b=window.prompt("enter second number","0");
+	   a=parseInt(a);
+       b=parseInt(b);	   
+       a=a+b;
+       alert("the sum is  "+a);
+       }
+
+       buttons[1].onclick = function(){
+       var a=window.prompt("enter first number","0");
+       var b=window.prompt("enter second number","0");
+	   a=parseInt(a);
+       b=parseInt(b); 
+       a=a-b;
+       alert("the substraction is  "+a);
+	   } 
+       buttons[2].onclick = function(){
+       var a=window.prompt("enter first number","0");
+       var b=window.prompt("enter second number","0");
+	   a=parseInt(a);
+       b=parseInt(b);
+       a=a*b;
+       alert("the product is  "+a);
+       }
+       buttons[3].onclick = function(){
+       var a=window.prompt("enter first number","0");
+       var b=window.prompt("enter second number","0");
+	   a=parseInt(a);
+       b=parseInt(b);
+	   if(b==0)
+	   {alert("division by zero not allowed");}
+	   else
+	   {
+       a=a/b;
+       alert("the division is  "+a);
+	   }
+     }
+   }
+   }
+	
+	</script>
+	<button type="button" id="add" onclick="calc()">Add</button> 
+	<button type="button" id="sub" onclick="calc()">Substract</button>
+	<button type="button" id="mul" onclick="calc()">Multiply</button>
+	<button type="button" id="div" onclick="calc()">Divide</button>
+</body>
+</html> 

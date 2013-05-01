@@ -1,0 +1,49 @@
+<body>
+
+<script>
+
+function translate ( id )
+{
+	var trns = new Array ( );
+	
+	trns['merry'] = "god";
+	trns['christmas'] = "jul";
+	trns['and'] = "och";
+	trns['happy'] = "gott";
+	trns['new'] = "nytt";
+	trns['year'] = "år";
+	
+	var str = document.getElementById ( id ).value;
+	
+	var lookup = new String ( );
+	var str_f = new String ( );
+	
+	for ( i = 0; i < str.length; i ++ )
+	{
+		if ( str[i] == ' ' )
+		{
+			str_f += trns[lookup];
+		}
+		
+		if ( str[i-1] == ' ')
+		{
+			lookup = str[i];
+			str_f += ' ';
+		}
+		else
+		{
+			lookup += str[i];
+		}
+	}
+	str_f += trns[lookup];
+	
+	document.getElementById ( id ).value =  str_f;
+}
+
+</script>
+
+<label for="input">Enter your Christmas Card Text : </label>
+<input id="input" size="100">
+<input type="button" value="Translate!" onClick="translate('input')">
+
+</body>

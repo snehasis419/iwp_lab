@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>longest word</title>
+</head>
+<body>
+<script>
+var a=new Array();
+var c=window.prompt("enter the number of elements in an array","");
+var i;
+for(i=0;i<c;i++)
+{
+  a[i]=window.prompt("enter a word");
+}
+var ty=window.prompt("enter the length to filter","");
+filterLongWords(a,ty);
+function filterLongWords(a,ty)
+{
+  var k,l,p=0;
+  for(k=0;k<c;k++)
+  {
+     if(a[k].length>ty)
+	 {
+	   alert(a[k]);
+	  }
+   }
+   
+}
+</script>
+</body>
+</html>   

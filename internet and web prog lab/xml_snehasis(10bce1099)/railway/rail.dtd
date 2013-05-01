@@ -1,0 +1,15 @@
+<!ELEMENT Railways (RailwayTicket)>
+<!ELEMENT RailwayTicket (source,destination,pdetails,bookeddate,amt)>
+<!ELEMENT source (stationName,stationCode)>
+<!ELEMENT destination (stationName,stationCode>
+<!ELEMENT stationName (#PCDATA)>
+<!ELEMENT stationCode (#PCDATA)>
+<!ELEMENT pdetails (name,age,sex,seniorCitizen)>
+<!ELEMENT name(title,actualName)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT actualName (#PCDATA)>
+<!ELEMENT age(#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT seniorCitizen (#PCDATA)>
+<!ELEMENT bookeddate (#PCDATA)>
+<!ELEMENT amt (#PCDATA)>
