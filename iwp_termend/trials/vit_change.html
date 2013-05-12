@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>
+vit university
+</title>
+<script type="text/javascript">
+var obj;
+
+function foo ()
+{
+obj=document.getElementById("demo");
+}
+setInterval(function()
+{ 
+  if(obj.style.color=="red")
+  {
+    obj.style.color="green";
+	obj.style.fontSize="80px";
+   }
+   else 
+   {
+      obj.style.color="red";
+	obj.style.fontSize="40px";   
+   }
+},5000);
+</script>   
+</head>
+<body onLoad="foo()">
+<p id="demo" style="color:red;font-size:40px">Vit University</p>
+</body>
+</html>  

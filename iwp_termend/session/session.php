@@ -1,0 +1,19 @@
+<?php
+session_start();
+if(isset($_SESSION["views"]))
+{
+  $_SESSION["views"]+=1;
+}
+else
+{
+  $_SESSION["views"]=1;
+}  
+?>
+<html>
+<body>
+<?php
+echo $_SESSION["views"];
+session_destroy();
+?>
+</body>
+</html>
